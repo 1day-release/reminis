@@ -46,6 +46,7 @@
 
   .l-header {
     position: fixed;
+    z-index: 70;
     top: 0;
     left: 0;
     box-sizing: content-box;
@@ -55,7 +56,7 @@
     width: 100%;
     height: $header-height;
     padding-top: 0;
-    box-shadow: 0 3px 6px rgba(#000, 0.3);
+    box-shadow: 0 3px 6px $shadow;
 
     &.is-future {
       color: #fff;

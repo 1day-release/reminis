@@ -55,6 +55,7 @@
 
   .l-footer {
     position: fixed;
+    z-index: 70;
     bottom: 0;
     left: 0;
     display: flex;
@@ -63,7 +64,7 @@
     width: 100%;
     height: $header-height;
     background-color: #fff;
-    box-shadow: 0 5px 20px rgba(#000, 0.3);
+    box-shadow: 0 5px 20px $shadow;
 
     &.is-future {
       color: map-get($color-brand, "future");

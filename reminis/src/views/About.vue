@@ -2,12 +2,12 @@
   <div class="l-container">
     <Header
       page-title = "思い出リスト"
-      :page-class = pageClass
+      :page-class = "pageClass"
     />
     <Main>
     </Main>
     <Footer
-      :page-class = pageClass
+      :page-class = "pageClass"
     />
   </div>
 </template>
