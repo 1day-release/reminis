@@ -23,11 +23,14 @@ $alpha: 0.7;
 // Color
 // =====================================
 $color-brand: (
-  "main": #53BCC0
+  "main": #F8D100,
+  "gray": #BABABA,
 );
 
-$color-dark: (
-  "main": #28253C,
+$color-text: (
+  "base": #6F6F6F,
+  "main": map-get($color-brand, "main"),
+  "gray": map-get($color-brand, "gray"),
 );
 
 
