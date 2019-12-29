@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+// ***********************************************
+//  Global Variables
+// ***********************************************
+$directory: "/assets/images/";
+
+@import url('//fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP|Open+Sans&display=swap');
+
+
+// Size
+// =====================================
+$sp-min-width: 320px;
+$sp-max-width: 480px;
+
+$pc-min-width: 640px;
+$tb-max-width: 1024px;
+
+$duration: 0.3s;
+$alpha: 0.7;
+
+
+// Color
+// =====================================
+$color-brand: (
+  "main": #53BCC0
+);
+
+$color-dark: (
+  "main": #28253C,
+);
+
+
+// Font Family
+// =====================================
+$ff:
+  Helvetica Neue, -apple-system,
+  'BlinkMacSystemFont',
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  "Noto Sans JP",
+  YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック",
+  "メイリオ", Meiryo, Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+$ff-serif:
+  "Noto Serif JP",
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+  "游明朝", YuMincho,
+  "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+
+// Media Queries
+// =====================================
+$device-dark: "screen and (prefers-color-scheme: dark)";
+$device-s: "screen and (max-width: #{$sp-max-width})";
+$device-m: "screen and (min-width: #{$tb-max-width+1}) and (max-width: #{$tb-max-width})";

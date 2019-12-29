@@ -1,4 +1,4 @@
-# reminisce
+# reminis
 
 ## Project setup
 ```
