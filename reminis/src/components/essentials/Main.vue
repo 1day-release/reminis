@@ -14,4 +14,12 @@
 
 <style scoped lang="scss">
   @import "@/assets/styles/functions.scss";
-</style>
+
+  main {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100% - #{$header-height + $footer-height});
+    margin: $header-height 0 $footer-height;
+  }
+</style>s

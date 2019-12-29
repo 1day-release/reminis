@@ -16,31 +16,50 @@ $sp-max-width: 480px;
 $pc-min-width: 640px;
 $tb-max-width: 1024px;
 
+$header-height: 55px;
+$footer-height: 55px;
+
 $duration: 0.3s;
 $alpha: 0.7;
 
 
 // Color
 // =====================================
+$color-pallet: (
+    "blue": #52AFE5,
+     "red": #F2564C,
+  "yellow": #F3D058,
+   "green": #32C77C,
+  "purple": #878FCA,
+   "black": #858687,
+);
+
 $color-brand: (
-  "main": #F8D100,
-  "gray": #BABABA,
+   "future": #F8D100,
+  "reminis": map-get($color-pallet, "blue"),
+
+  "gray": #B9BABB,
 );
 
 $color-text: (
   "base": #6F6F6F,
-  "main": map-get($color-brand, "main"),
+
+   "future": map-get($color-brand, "future"),
+  "reminis": map-get($color-brand, "reminis"),
+
   "gray": map-get($color-brand, "gray"),
 );
+
+$shadow: rgba(#000, 0.3);
 
 
 // Font Family
 // =====================================
 $ff:
+  "Noto Sans JP",
   Helvetica Neue, -apple-system,
   'BlinkMacSystemFont',
   "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-  "Noto Sans JP",
   YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック",
   "メイリオ", Meiryo, Osaka,
   "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
