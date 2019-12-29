@@ -1,9 +1,14 @@
 <template>
   <div class="l-container">
-    <Header />
+    <Header
+      page-title = "やりたいことリスト"
+      :page-class = pageClass
+    />
     <Main>
     </Main>
-    <Footer />
+    <Footer
+      :page-class = pageClass
+    />
   </div>
 </template>
 
