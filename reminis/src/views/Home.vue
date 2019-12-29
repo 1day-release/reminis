@@ -5,25 +5,23 @@
       :page-class = "pageClass"
     />
     <Main>
-      <div class="wrap">
-        <ul class="list">
-          <li
-            v-for="(AAA, index) in dummy"
-            :key="index"
-          >
-            <Piece
-              :path = "{name: ''}"
-              :theme = "AAA.theme"
-              :who   = "AAA.who"
-              :what  = "AAA.what"
-              :where = "AAA.where"
-              :when  = "AAA.when"
-              :color-class = "AAA.color"
-              :style = "setBackgroundImage(AAA.image)"
-            />
-          </li>
-        </ul>
-      </div>
+      <ul class="list">
+        <li
+          v-for="(AAA, index) in dummy"
+          :key="index"
+        >
+          <Piece
+            :path = "{name: ''}"
+            :theme = "AAA.theme"
+            :who   = "AAA.who"
+            :what  = "AAA.what"
+            :where = "AAA.where"
+            :when  = "AAA.when"
+            :color-class = "AAA.color"
+            :style = "setBackgroundImage(AAA.image)"
+          />
+        </li>
+      </ul>
     </Main>
     <Footer
       :page-class = "pageClass"
@@ -152,11 +150,11 @@
   .list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-auto-flow: row;
-    grid-column-gap: 20px;
-    grid-row-gap:    20px;
-    margin: 20px 0;
+    grid-column-gap: 15px;
+    grid-row-gap:    15px;
+    margin: 20px 15px;
 
     >li {
       position: relative;

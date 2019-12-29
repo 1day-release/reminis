@@ -106,11 +106,12 @@
       dt {
         margin-bottom: 5px;
         text-align: center;
-        line-height: 1.5;
+        line-height: 1.4;
         font-size: 2.0rem;
 
         &:only-child {
           display: flex;
+          justify-content: center;
           align-items: center;
           height: 100%;
           padding-bottom: 10px;
