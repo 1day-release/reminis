@@ -7,18 +7,18 @@
     <Main>
       <ul class="list">
         <li
-          v-for="(AAA, index) in dummy"
+          v-for="(item, index) in dummy"
           :key="index"
         >
           <Piece
             :path = "{name: ''}"
-            :theme = "AAA.theme"
-            :who   = "AAA.who"
-            :what  = "AAA.what"
-            :where = "AAA.where"
-            :when  = "AAA.when"
-            :color-class = "AAA.color"
-            :style = "setBackgroundImage(AAA.image)"
+            :theme = "item.theme"
+            :who   = "item.who"
+            :what  = "item.what"
+            :where = "item.where"
+            :when  = "item.when"
+            :color-class = "item.color"
+            :style = "setBackgroundImage(item.image)"
           />
         </li>
       </ul>
@@ -124,8 +124,8 @@
             theme: '自分探しの旅に出る',
             who:   'ひとり',
             what:  '',
-            where: '',
-            when:  'どこへでも',
+            where: 'どこへでも',
+            when:  '',
             color: 'black',
             image: '',
           },
