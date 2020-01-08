@@ -4,25 +4,25 @@
     class="piece"
     :class="[setColorClass()]"
   >
-  <dl class="piece-data">
-    <dt>{{ theme }}</dt>
-    <dd v-if="who">
-      <fa-icon icon="user-alt" />
-      <p class="piece-data-text">{{ who }}</p>
-    </dd>
-    <dd v-if="what">
-      <fa-icon :icon="['fab', 'font-awesome-flag']" />
-      <p class="piece-data-text">{{ what }}</p>
-    </dd>
-    <dd v-if="where">
-      <fa-icon icon="map-marked-alt" />
-      <p class="piece-data-text">{{ where }}</p>
-    </dd>
-    <dd v-if="when">
-      <fa-icon icon="calendar-alt" />
-      <p class="piece-data-text">{{ when }}</p>
-    </dd>
-  </dl>
+    <dl class="piece-data">
+      <dt>{{ theme }}</dt>
+      <dd v-if="who">
+        <fa-icon icon="user-alt" />
+        <p class="piece-data-text">{{ who }}</p>
+      </dd>
+      <dd v-if="what">
+        <fa-icon :icon="['fab', 'font-awesome-flag']" />
+        <p class="piece-data-text">{{ what }}</p>
+      </dd>
+      <dd v-if="where">
+        <fa-icon icon="map-marked-alt" />
+        <p class="piece-data-text">{{ where }}</p>
+      </dd>
+      <dd v-if="when">
+        <fa-icon icon="calendar-alt" />
+        <p class="piece-data-text">{{ when }}</p>
+      </dd>
+    </dl>
   </router-link>
 </template>
 
