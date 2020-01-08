@@ -21,9 +21,9 @@
         <span>思い出</span>
       </router-link>
       <router-link
-        :to="{ name: '' }"
+        :to="{ name: 'Setting' }"
         class="footer-button"
-        :class="{'is-active': $route.path === '/settings'}"
+        :class="{'is-active': $route.path === '/setting'}"
       >
         <fa-icon icon="cog" />
         <span>設定</span>

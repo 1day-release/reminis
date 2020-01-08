@@ -67,6 +67,16 @@
       color: #fff;
       background-color: map-get($color-brand, "reminis");
     }
+
+    &.is-setting {
+      justify-content: center;
+
+      .header {
+        &-button {
+          display: none;
+        }
+      }
+    }
   }
 
   .header {
