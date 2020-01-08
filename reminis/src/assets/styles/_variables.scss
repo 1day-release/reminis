@@ -5,7 +5,7 @@
 // ***********************************************
 $directory: "/assets/images/";
 
-@import url('//fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP|Open+Sans&display=swap');
+@import url('//fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Noto+Serif+JP|Open+Sans&display=swap');
 
 
 // Size
@@ -36,7 +36,7 @@ $color-pallet: (
 
 $color-brand: (
    "future": #F8D100,
-  "reminis": map-get($color-pallet, "blue"),
+  "reminis": #878ECC,
 
   "gray": #B9BABB,
 );
