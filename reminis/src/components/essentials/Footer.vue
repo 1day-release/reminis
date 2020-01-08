@@ -13,9 +13,9 @@
         <span>やりたいこと</span>
       </router-link>
       <router-link
-        :to="{ name: 'About' }"
+        :to="{ name: 'Reminis' }"
         class="footer-button"
-        :class="{'is-active': $route.path === '/about'}"
+        :class="{'is-active': $route.path === '/reminis'}"
       >
         <fa-icon icon="film" />
         <span>思い出</span>
