@@ -11,9 +11,7 @@
   export default {
     name: 'About',
     components: {
-      Header,
       Main,
-      Footer,
     },
     data () {
       return {
