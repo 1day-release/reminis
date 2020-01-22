@@ -5,8 +5,9 @@
     >
       <h1 class="header-title">{{ pageTitle }}</h1>
       <IconButton
+        :path = "path"
+         icon = "times"
         class="header-button is-close"
-        icon="times"
       />
     </div>
   </header>
@@ -23,6 +24,10 @@
     props: {
       pageTitle: String,
       pageClass: String,
+      path: {
+        type: [String, Object],
+        default: () => {}
+      },
     },
     methods: {
     },
