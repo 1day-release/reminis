@@ -1,5 +1,24 @@
 <template>
-  <button class="button">
+  <router-link
+    v-if = "path && typeof path === 'object'"
+    :to = "path"
+    class="button"
+  >
+    <fa-icon :icon="icon" />
+  </router-link>
+
+  <a
+    v-else-if = "path"
+    :href="path"
+    class="button"
+  >
+    <fa-icon :icon="icon" />
+  </a>
+
+  <button
+    v-else
+    class="button"
+  >
     <fa-icon :icon="icon" />
   </button>
 </template>
@@ -8,6 +27,7 @@
   export default {
     name: 'IconButton',
     props: {
+      path: [String, Object],
       icon: String,
     },
     methods: {
@@ -25,5 +45,6 @@
     width: 30px;
     height: 30px;
     font-size: 2.2rem;
+    color: inherit;
   }
 </style>

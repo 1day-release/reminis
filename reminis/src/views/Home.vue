@@ -3,6 +3,7 @@
     <Header
       page-title = "やりたいことリスト"
       :page-class = "pageClass"
+      :path = "{name: 'AddToDo'}"
     />
     <Main>
       <ul class="list">

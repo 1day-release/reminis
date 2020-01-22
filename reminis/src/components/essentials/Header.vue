@@ -6,6 +6,7 @@
     >
       <h1 class="header-title">{{ pageTitle }}</h1>
       <IconButton
+        :path = "path"
         class="header-button is-left"
         icon="plus"
       />
@@ -28,6 +29,10 @@
     props: {
       pageTitle: String,
       pageClass: String,
+      path: {
+        type: [String, Object],
+        default: () => {}
+      },
     },
     methods: {
       setPageClass () {
